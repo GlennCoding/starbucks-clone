@@ -23,10 +23,44 @@ body {
     font-feature-settings: "calt";
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 28px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+@media (min-width: 375px) {
+    h2 {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 768px) {
+    h2 {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 50px;
+    }
+}
+
 /* || UTILITIES  -----------------   */
 
 .flex {
-    display: flex;
+    display: flex !important;
 }
 
 .button {
@@ -67,6 +101,55 @@ body {
     align-items: center !important;
 }
 
+.justify-center {
+    justify-content: center !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.f-size-1 {
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.p1 {
+    padding-top: 3.2rem !important;
+    padding-bottom: 3.2rem !important;
+}
+
+.mb1 {
+    margin-bottom: 32px;
+}
+
+.box-1 {
+    max-width: 42em;
+}
+
+.green-box {
+    background-color: #d4e9e2;
+    color: #1e3932;
+}
+
+@media (min-width: 480px) {
+    .p1 {
+        padding: 0 2.4rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .f-size-1 {
+        font-size: 19px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .p1 {
+        padding: 0 4rem;
+    }
+}
+
 /* || SITEWIDE  -----------------   */
 
 .main-nav {
@@ -75,7 +158,7 @@ body {
 }
 
 .primary-content {
-    width: 1440px;
+    max-width: 1440px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -129,7 +212,7 @@ body {
 }
 
 .menu__button1 > svg {
-    width: 32px;
+    width: 24px;
     height: 32px;
     overflow: visible;
     padding-right: 0.8rem;
@@ -155,6 +238,8 @@ body {
         padding-bottom: 4rem !important;
     }
 }
+
+/* Main Content */
 
 /* || Helping Visual Presets */
 
